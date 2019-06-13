@@ -1,0 +1,840 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #333333;
+	font-family: 'Muli', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+}
+
+p
+{
+	line-height: 40px;
+	text-align: justify;
+}
+
+a {
+	color: #171717;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+	@media (min-width: 1025px){
+	.image
+	{
+		display: inline-block;
+	}
+
+	.image-left
+	{
+		float: left;
+		margin: 2em 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+}
+		.image img
+		{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	
+
+
+
+	@media (max-width: 768px){
+			.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 2em 0 2em 0;
+	}
+	
+	}
+	
+	
+	
+
+hr {
+	display: none;
+}
+
+@media (min-width: 1025px)
+{
+	p
+	{
+		text-align: left;
+	}
+}
+
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.style1 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	
+	ul.style1 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.style2 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+	
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 1.5em 0em 2.5em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.5em;
+		font-size: 2.5em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #3f3f3f;
+		width: 2em;
+		height: 2em;
+		line-height: 2em;
+		border-radius: 100px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	ul.contact li a.icon-facebook:before { background: #39599F; }
+	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+	ul.contact li a.icon-tumblr:before { background: #31516A; }
+	ul.contact li a.icon-rss:before { background: #F2600B; }
+
+	@media (min-width: 768px)
+	{
+		ul.contact li
+		{
+			padding: 0em 0.30em;
+			font-size: 1em;
+		}
+	
+		ul.contact li a:before
+		{
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 2em;
+		text-transform: uppercase;
+	}
+
+	.title h2
+	{
+		letter-spacing: 0.20em;
+		font-weight: 700;
+		font-size: 2em;
+		color: #00AABB;
+	}
+	
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url(images/bg01.png) repeat;
+}
+
+#footer-wrapper
+{
+	background: #0F0F0F;
+}
+
+.container {
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+@media (min-width: 1025px)
+{
+	.container
+	{
+		width: 1200px;
+	}
+}
+
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	background-size: 100%;
+	background: #333333;
+}
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header 
+	{
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo 
+	{
+		margin: 0 auto;
+		padding: 2em 0em;
+		text-transform: uppercase;
+	}
+	
+	#logo h1
+	{
+		letter-spacing: 0.10em;
+		font-size: 8em;
+	}
+	
+	#logo p 
+	{
+		letter-spacing: 0.10em;
+		color: #FFF;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	
+	#logo a 
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	@media (min-device-width: 768px)
+	{
+		#logo h1
+		{
+			font-size: 5em;
+		}
+	}
+
+	@media (min-width: 1025px)
+	{
+		#logo{
+			width: 500px;
+			float: right;
+		}
+
+		#logo h1
+		{
+			font-size: 3em;
+		}
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+#banner 
+	{
+		left: 0;
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	#banner img
+	{
+		border: 5px solid #FFFFFF;
+	}
+	
+
+/** MENU */
+
+#menu-wrapper
+{
+	background: #00AABB;
+}
+
+#menu
+{
+	overflow: hidden;
+}
+
+#menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li
+{
+	display: inline-block;
+	font-size: 2em;
+}
+
+#menu a
+{
+	display: block;
+	letter-spacing: 1px;
+	padding: 30px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #FFF;
+}
+
+#menu a:hover, #menu .current_page_item a
+{
+	text-decoration: none;
+}
+
+#menu .current_page_item a
+{
+	background: #008C9A;
+}
+
+@media (min-device-width: 768px)
+{
+	#menu ul
+	{
+		padding: 0 5em;
+	}
+
+	#menu li
+	{
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 1025px)
+{
+	#menu
+	{
+		height: 100px;
+	}
+
+	#menu ul{
+		padding: 25px 0px 0px 0px;
+	}
+
+	#menu li
+	{
+		font-size: 1em;
+	}
+
+	#menu a
+	{
+		padding: 20px 40px;
+	}
+}
+/** PAGE */
+
+#page
+{
+	position: relative;
+	overflow: hidden;
+	padding: 6em 2em 5em;
+}
+
+@media (min-device-width: 768px)
+{
+	#page
+	{
+		padding: 6em 4em 5em;
+	}
+}
+
+@media (min-width: 1025px)
+{
+	#page
+	{
+		padding: 6em 0em 5em;
+	}
+}
+
+/** CONTENT */
+
+@media (min-device-width: 768px)
+{
+	#content
+	{
+		float: right;
+		width: 60%;
+		padding: 0;
+	}
+}
+
+@media (min-width: 1025px)
+{
+	#content
+	{
+		width: 790px;
+	}
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	
+	#sidebar .title h2
+	{
+		font-size: 1.6em;
+	}
+	
+	#sidebar .box1
+	{
+		margin-bottom: 3em;
+	}
+
+	#sidebar .box2
+	{
+		margin-top: 7em;
+		padding: 0 5em;
+	}
+
+	@media (min-device-width: 768px)
+	{
+		#sidebar
+		{
+			float: left;			
+			width: 30%;
+		}
+
+		#sidebar .box2
+		{
+			margin-top: 0;
+			padding: 0;
+		}
+	}
+
+	@media (min-width: 1025px)
+	{
+		#sidebar
+		{
+			width: 345px;
+		}
+	}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 7em;
+		text-align: center;
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.80em;
+		color: #6F6F6F;
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: #8C8C8C;
+	}
+
+	@media (min-width: 1025px)
+	{
+		#copyright
+		{
+			padding: 5em 0;
+		}
+	}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-bottom: 1px solid #E5E5E5;
+		text-align: center;
+	}
+	
+	#welcome h2
+	{
+		letter-spacing: 0.20em;
+		text-transform: uppercase;
+		font-size: 2.6em;
+	}
+	
+	#welcome p
+	{
+		font-size: 1.3em;
+	}
+
+	#welcome .byline
+	{
+		display: block;
+		padding: 0em 0em 1.5em 0em;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-wrapper
+	{
+		background: rgba(0,0,0,.04);
+		padding: 3em 6em;
+		color: rgba(255,255,255,.7);
+	}
+	
+	#portfolio
+	{
+		overflow: hidden;
+	}
+	
+	#portfolio .title h2
+	{
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	#portfolio .byline
+	{
+		font-size: 1em;
+		color: #EEA7C1;
+	}
+
+	#column1,
+	#column2,
+	#column3,
+	#column4,
+	{
+		margin-top: 7em;
+		width: 100%;
+	}
+	
+	@media (min-device-width: 768px)
+	{
+		#portfolio-wrapper
+		{
+			padding: 2em 2em 6em;
+		}
+
+		#column1,
+		#column2,
+		#column3,
+		#column4
+		{
+			width: 49%;
+			display: inline-block;
+			margin-top: 4em;
+			padding: 0 2em;
+		}
+	}
+
+	@media (min-width: 1025px)
+	{
+		#portfolio-wrapper
+		{
+			padding: 0 0 6em;
+		}
+
+		#column1,
+		#column2,
+		#column3,
+		#column4
+		{
+			width: 282px;
+			padding: 0 1em;
+		}
+		
+	}
+	
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin: 1.5em;
+		padding: 0.50em 3em 0.50em 2em;
+		background: #00AABB;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 2em;
+		color: #FFF;
+	}
+	
+		.button:before
+		{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 20px;
+			text-align: center;
+			color: #FFF;
+		}
+
+		@media (min-device-width: 768px)
+		{
+			.button
+			{
+				margin: 0;
+				font-size: 1em;
+			}
+
+		}
+
+		@media (min-width: 1025px)
+		{
+			.button
+			{
+				margin: 0;
+				margin-top: 1.5em;
+				font-size: 0.90em;
+			}
+		}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer-wrapper
+	{
+		overflow: hidden;
+		padding: 5em 7em;
+		background: #1E1B1A;
+	}
+
+	#footer
+	{
+		color: #ADADAD;
+	}
+	
+	#footer .title h2
+	{
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	#footer .title
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 li
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 a
+	{
+		letter-spacing: 0.10em;
+		font-size: 0.9em;
+		color: #B1B1B1;
+	}
+
+	#box2,
+	#box3
+	{
+		margin-top: 7em;
+	}
+	
+	@media (min-device-width: 768px)
+	{
+		#footer-wrapper
+		{
+			padding: 5em 0;
+		}
+
+		#footer .style1 a
+		{
+			font-size: 1em;
+		}
+
+		#box1,
+		#box2
+		{
+			width: 49%;
+			display: inline-block;
+			padding: 0 4em;
+		}
+
+		#box2,
+		#box3
+		{
+			margin-top: 0;
+		}
+		
+		#box3
+		{
+			width: 100%;
+			padding: 0 4em;
+			padding-top: 4em;
+		}
+	}
+
+	@media (min-width: 1025px)
+	{
+		#box1,
+		#box2
+		{
+			width: 375px;
+			margin-right: 24px;
+			padding: 0;
+		}
+
+		#box3
+		{
+			width: 375px;
+			padding: 0;
+			display: inline-block;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
